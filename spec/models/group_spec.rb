@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe Group, type: :model do
   before(:each) do
-    
     @user = User.new(name: 'Amina', email: 'amina@gmail.com')
     @group = Group.new(name: 'aliya', user_id: @user.id)
     @group.transactions.new(name: 'fatima', amount: 10, user_id: @user.id, group_id: @group.id)
@@ -19,6 +18,4 @@ RSpec.describe Group, type: :model do
       expect(@group).to_not be_valid
     end
   end
-
-  
 end

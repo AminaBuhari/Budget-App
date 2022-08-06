@@ -4,7 +4,7 @@ RSpec.describe Transaction, type: :model do
   before(:each) do
     @user = User.new(name: 'Amina', email: 'amina@gmail.com', id: 5)
     @group = Group.new(name: 'aliya', user_id: @user.id, id: 5)
-   @transaction = @group.transactions.new(name: 'fatima', amount: 10, user_id: @user.id, group_id: @group.id)
+    @transaction = @group.transactions.new(name: 'fatima', amount: 10, user_id: @user.id, group_id: @group.id)
   end
 
   describe 'validation tests' do
