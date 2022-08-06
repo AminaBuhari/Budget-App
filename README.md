@@ -1,6 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-#### Original design idea by **[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)**, in association with the [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) of the design.
-<br />
+![](https://img.shields.io/badge/Microverse-
 
 # Office Frei Budget App
 
@@ -75,6 +73,6 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 
-## 📝 License
+## Acknowledgement
+#### Original design idea by **[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)**, in association with the [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) of the design.
 
-This project is [MIT](./MIT.md) licensed.
