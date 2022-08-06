@@ -44,6 +44,15 @@
     gap: 5px;
   }
 
+  .but {
+  border: none;
+  background-color: transparent;
+  justify-self: center;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 150px;
+  }
+
   .btnss {
     background-color: yellow;
     width: 100px;
