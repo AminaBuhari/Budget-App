@@ -6,7 +6,7 @@
 
 
 ## Live Demo
- For a live demo of the project [click here](). Please log in with the following pre-verified credentials:
+ For a live demo of the project [click here](https://officefrei.herokuapp.com/). Please log in with the following pre-verified credentials:
 
 
 ## Development set up
