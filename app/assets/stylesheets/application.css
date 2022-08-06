@@ -55,6 +55,9 @@
   background-color: yellow;
   width: 100px;
   border-radius: 5px;
+
+.image {
+  object-fit: contain;
 }
 
 .index-btn {

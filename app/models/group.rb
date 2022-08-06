@@ -4,7 +4,8 @@ class Group < ApplicationRecord
   validates :name, presence: true
   validates :image, presence: true
 
-  has_many :transactions, dependent: :delete_all
+  has_many :transactionss, dependent: :delete_all
+
   belongs_to :user, class_name: 'User'
 
   def transaction_count
@@ -12,6 +13,8 @@ class Group < ApplicationRecord
   end
 
   def transaction_sum
-    transactions.sum(:amount)
+
+    transaction.sum(:amount)
+
   end
 end
