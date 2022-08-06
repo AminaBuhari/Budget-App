@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class GroupsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -45,4 +45,5 @@ class GroupsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to groups_url
   end
+
 end

@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class TransactionsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -45,4 +45,5 @@ class TransactionsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to transactions_url
   end
+
 end
