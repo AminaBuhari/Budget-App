@@ -1,0 +1,19 @@
+<div class="navbar-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <span class="navbar-toggler-icon"></span>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h2>
+        <button type="button" class="btn-danger-close text-reset btn btn-danger" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+    </div>
+    <div class="offcanvas-body bg-dark">
+    <ul class="navbar-nav justify-content-end flex-grow-1 mt-5">
+        <li class="nav-item">
+            <h5><%= link_to "Home", groups_path, class: " text-white text-decoration-none nav-link text-center" %></h5>
+        </li>
+        <li class="nav-item">
+            <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn-link but text-white text-center justify-content-center" %>
+        </li>
+    </ul>
+    </div> 
+</div>
