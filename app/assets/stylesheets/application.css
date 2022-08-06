@@ -40,6 +40,15 @@
   .btns {
     background-color: #61b526;
     width: 100px;
+    border-radius: 5px;
+    gap: 5px;
+  }
+
+  .btnss {
+    background-color: yellow;
+    width: 100px;
+    border-radius: 5px;
+  
   }
 
   .index-btn {
