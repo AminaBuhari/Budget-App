@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
 
 gem 'devise'
 
@@ -43,7 +47,13 @@ gem 'jbuilder'
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+<<<<<<< HEAD
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+=======
+
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+>>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
@@ -56,11 +66,21 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+<<<<<<< HEAD
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+=======
+
+  gem "debug", platforms: %i[mri mingw x64_mingw]
+>>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+<<<<<<< HEAD
+=======
+
+  gem "web-console"
+>>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'web-console'
 
