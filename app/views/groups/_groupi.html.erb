@@ -5,12 +5,11 @@
   <div class="flex-fill p-2">
     <div class="d-flex justify-content-between">
       <p><%= group.name %></p>
-      <p>$<%= group.transaction_count %></p>
+      <p>$<%= group.transaction_sum%></p>
 
     </div>
-    <p class="text-secondary">Transactions: <%= group.transaction_sum %></p>
+    <p class="text-secondary">Transactions: <%= group.transaction_count %></p>
     <p class="text-secondary"><%= group.created_at.strftime('%d %b %Y') %></p>
   </div>
 </div>
-  <%= link_to "Manage", group_path(group.id), class: "btn btn-outline-warning mb-2" %>
 </div>

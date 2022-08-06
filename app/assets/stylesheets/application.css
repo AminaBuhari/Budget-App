@@ -24,10 +24,23 @@
     height: 100vh;
   }
    
-  .image {
-    object-fit: contain;
+
+
+  .icon {
+    width: 300px;
+    height: 60vh;
   }
   
+
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btns {
+    background-color: #61b526;
+    width: 100px;
+  }
 
   .index-btn {
     display: block;

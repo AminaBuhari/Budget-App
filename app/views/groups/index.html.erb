@@ -9,9 +9,11 @@
 <section id="groups" class="container-fluid">
   <%= render "partials/alert"%>
 
-  <div class="container my-5  ">
+  <div class="container mt-5  ">
     <% @groups.each do |group| %>
+      <%= link_to group_transactions_path(group), class: "text-decoration-none text-dark" do %>
         <%= render group %>
+      <% end %>
     <% end %>
   </div>
 </section>
