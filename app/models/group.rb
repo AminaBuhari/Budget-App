@@ -13,8 +13,6 @@ class Group < ApplicationRecord
   end
 
   def transaction_sum
-
     transaction.sum(:amount)
-
   end
 end

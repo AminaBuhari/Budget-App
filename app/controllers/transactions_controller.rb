@@ -59,9 +59,8 @@ class TransactionsController < ApplicationController
     @transaction.destroy
 
     respond_to do |format|
-
       format.html { redirect_to group_transactions_path, notice: "Transaction was successfully destroyed." }
-      
+
       format.json { head :no_content }
     end
   end
@@ -80,6 +79,5 @@ class TransactionsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def transaction_params
     params.require(:transaction).permit(:name, :amount, :group_id).merge(user_id: current_user.id)
-
   end
 end
