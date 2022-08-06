@@ -5,7 +5,7 @@ class TransactionsController < ApplicationController
   # GET /transactions or /transactions.json
   def index
     set_group
-    @transactions = Transaction.where(user_id: @current_user).where(group_id: params[:group_id])
+    @transactions = Transaction.where(group_id: params[:group_id])
   end
 
   # GET /transactions/1 or /transactions/1.json
