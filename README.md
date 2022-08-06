@@ -18,7 +18,7 @@ Use the following steps to run this Project locally:
 - Open the terminal
 
 - Run this command:
-`git clone git@github.com:isaacpitwa/budget-app.git`
+`git clone https://github.com/AminaBuhari/Budget-App.git`
 
 - Enter in to the folder:
 `cd budget-app`
