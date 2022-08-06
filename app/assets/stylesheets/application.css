@@ -32,7 +32,6 @@
   width: 100px;
   height: 100px;
 }
-<<<<<<< HEAD
 
 .btns {
   background-color: #61b526;
@@ -41,16 +40,6 @@
   gap: 5px;
 }
 
-=======
-
-.btns {
-  background-color: #61b526;
-  width: 100px;
-  border-radius: 5px;
-  gap: 5px;
-}
-
->>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
 .but {
   border: none;
   background-color: transparent;
@@ -64,7 +53,6 @@
   background-color: yellow;
   width: 100px;
   border-radius: 5px;
-<<<<<<< HEAD
 }
 
 .index-btn {
@@ -76,21 +64,4 @@
 
 footer {
   background: #61b526;
-=======
-
-  .image {
-    object-fit: contain;
-  }
-
-  .index-btn {
-    display: block;
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
-  }
-
-  footer {
-    background: #61b526;
-  }
->>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
 }
