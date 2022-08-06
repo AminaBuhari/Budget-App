@@ -27,13 +27,7 @@ class TransactionsController < ApplicationController
 
     respond_to do |format|
       if @transaction.save
-<<<<<<< HEAD
         format.html { redirect_to group_transactions_path(@group), notice: 'Transaction was successfully created.' }
-=======
-
-        format.html { redirect_to group_transactions_path(@group), notice: 'Transaction was successfully created.' }
-
->>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
         format.json { render :show, status: :created, location: @transaction }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -63,10 +57,6 @@ class TransactionsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to group_transactions_path, notice: 'Transaction was successfully destroyed.' }
-<<<<<<< HEAD
-=======
-
->>>>>>> 1f184222459445ba6dc698daf559ad23af2fd897
       format.json { head :no_content }
     end
   end
