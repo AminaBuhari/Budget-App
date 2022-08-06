@@ -5,6 +5,7 @@ class Group < ApplicationRecord
   validates :image, presence: true
 
   has_many :transactionss, dependent: :delete_all
+
   belongs_to :user, class_name: 'User'
 
   def transaction_count
