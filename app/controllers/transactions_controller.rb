@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: %i[ show edit update destroy ]
-  before_action :set_group, only: %i[ new create edit update destroy ]
+  before_action :set_transaction, only: %i[show edit update destroy]
+  before_action :set_group, only: %i[new create edit update destroy]
 
   # GET /transactions or /transactions.json
   def index
@@ -26,9 +26,8 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.user_id = current_user.id
     @transaction.group_id = @group.id
-   
+
     respond_to do |format|
-  
       if @transaction.save
         format.html { redirect_to group_transactions_path(@group), notice: "Transaction was successfully created." }
         format.json { render :show, status: :created, location: @transaction }
@@ -63,24 +62,20 @@ class TransactionsController < ApplicationController
       format.json { head :no_content }
     end
   end
- 
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_transaction
-      @transaction = Transaction.find(params[:id])
-    end
 
-    def set_group
-      @group = Group.find(params[:group_id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_transaction
+    @transaction = Transaction.find(params[:id])
+  end
 
+  def set_group
+    @group = Group.find(params[:group_id])
+  end
 
-
-    
-
-    # Only allow a list of trusted parameters through.
-    def transaction_params
-      params.require(:transaction).permit(:name, :amount, :group_id).merge(user_id: current_user.id)
-    end
+  # Only allow a list of trusted parameters through.
+  def transaction_params
+    params.require(:transaction).permit(:name, :amount, :group_id).merge(user_id: current_user.id)
+  end
 end
