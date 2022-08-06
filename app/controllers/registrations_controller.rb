@@ -54,9 +54,9 @@ class RegistrationsController < Devise::RegistrationsController
   def after_sign_up_path_for(resource)
     super(resource)
     flash[:notice] =
-    'A message with a confirmation link has been sent to your email address.
+      'A message with a confirmation link has been sent to your email address.
     Please follow the link to activate your account.'
-  session_path(resource_name)
+    session_path(resource_name)
   end
 
   # The path used after sign up for inactive accounts.
